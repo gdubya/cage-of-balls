@@ -7,10 +7,9 @@ import random
 app = Flask(__name__)
 ia = imdb.IMDb()
 
-app.debug=True
+movies = ia.search_movie('% age%', results=500)
 
 def selectRandomMovie():
-    movies = ia.search_movie('% age%', results=500)
     movie = movies[random.randint(0, len(movies))]
     return movie
 
