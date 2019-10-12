@@ -1,4 +1,4 @@
-Flask==0.12.3
+Flask==1.0
 FormEncode==1.2.4
 IMDbPY==5.0
 Jinja2==2.10.1
